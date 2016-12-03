@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="schilkroete.sammlung">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ToastNachWunscheingabe"
+            android:label="@string/btn_toastNachWunscheingabe">
+        </activity>
+
+        <activity
+            android:name=".ImageEinbindenUndAendern"
+            android:label="@string/btn_imageEinbindenUndAendern">
+        </activity>
+
+        <activity
+            android:name=".AnimationVerblassung"
+            android:label="@string/btn_animationVerblassung">
+        </activity>
+
+        <activity
+            android:name=".TicTacToe"
+            android:label="@string/btn_ticTacToe">
+        </activity>
+
+        <activity
+            android:name=".AlertDialog"
+            android:label="@string/btn_alertDialog">
+        </activity>
+
+        <activity
+            android:name=".Progressbar"
+            android:label="@string/btn_progressbar">
+        </activity>
+
+        <activity
+            android:name=".CheckNetzwerkverbindung"
+            android:label="@string/btn_checkNetzwerk">
+        </activity>
+
+
+    </application>
+
+</manifest>

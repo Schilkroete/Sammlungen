@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rell">
+
+    <EditText
+        android:hint="@string/et_individuelle_Eingabe"
+        android:layout_width="match_parent"
+        android:id="@+id/et_individuelle_Eingabe"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="@string/btn_toastAusgeben"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_toastAusgeben"
+        android:onClick="clickFunktion"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

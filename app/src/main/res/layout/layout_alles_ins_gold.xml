@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!--erster Absatz-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/top"
+        android:background="@android:color/black">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/zehner"
+            android:text="@string/leer00"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/background_light"
+            />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/neuner"
+            android:text="@string/leer00"
+            android:layout_below="@+id/zehner"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/background_light"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zehnerTreffer"
+            android:text="@string/zehnerTreffer"
+            android:layout_alignStart="@+id/neunerTreffer"
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/background_light"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/neunerTreffer"
+            android:text="@string/neunerTreffer"
+            android:layout_below="@id/zehnerTreffer"
+            android:layout_toStartOf="@+id/neuner"
+            android:layout_marginEnd="15dp"
+            android:textColor="@android:color/background_light"
+            />
+
+
+
+        <TextView
+            android:text="@string/treffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/neunerTreffer"
+            android:id="@+id/treffer"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/neunerTreffer"
+            android:textColor="@android:color/background_light"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+
+
+
+
+    <!--zweiter Absatz-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_alignParentStart="true"
+        android:id="@+id/middle">
+
+
+        <!--Reihe Eins-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/reiheEins">
+            <TextView
+                android:text="@string/passeZwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/passeZwei"
+                android:textSize="50dp"/>
+            <!--Passe 1-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passe1"
+                android:layout_toEndOf="@+id/passeZwei"
+                android:scrollbarDefaultDelayBeforeFade="0">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring1"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring2"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring3"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <!--Passe 2-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passe2"
+                android:layout_below="@+id/passe1"
+                android:layout_toEndOf="@+id/passeZwei">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring4"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring5"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring6"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <!--Reihe Zweite-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/reiheZwei">
+            <TextView
+                android:text="@string/passeVier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/passeVier"
+                android:textSize="50dp"
+                android:textColor="@android:color/background_dark"/>
+            <!-->Passe 3-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passe3"
+                android:layout_toEndOf="@+id/passeVier"
+                android:scrollbarDefaultDelayBeforeFade="0">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring7"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring8"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring9"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+
+            <!--Vierte Passe-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passe4"
+                android:layout_below="@+id/passe3"
+                android:layout_toEndOf="@+id/passeVier">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring10"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring11"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring12"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--Reihe Drei-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/reiheDrei">
+            <TextView
+                android:text="@string/passeSechs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/passeSechs"
+                android:textSize="50dp"/>
+            <!-->Fünfte Passe-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passe5"
+                android:layout_toEndOf="@+id/passeSechs"
+                android:scrollbarDefaultDelayBeforeFade="0">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring13"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring14"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring15"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <!--Sechste Passe-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passe6"
+                android:layout_below="@+id/passe5"
+                android:layout_toEndOf="@+id/passeSechs">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring16"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring17"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring18"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <!--Reihe Vierte-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/reiheVier">
+            <TextView
+                android:text="@string/passeAcht"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/passeAcht"
+                android:textSize="50dp"
+                android:textColor="@android:color/background_dark"/>
+            <!-->Passe 7-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passe7"
+                android:layout_toEndOf="@+id/passeAcht"
+                android:scrollbarDefaultDelayBeforeFade="0">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring19"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring20"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring21"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <!--Passe 8-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passe8"
+                android:layout_below="@+id/passe7"
+                android:layout_toEndOf="@+id/passeAcht">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring22"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring23"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring24"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <!--Fünfte Reihe-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/reiheFuenf">
+            <TextView
+                android:text="@string/passeZehn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/passeZehn"
+                android:textSize="50dp"/>
+            <!-->Passe 9-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passe9"
+                android:layout_toEndOf="@+id/passeZehn"
+                android:scrollbarDefaultDelayBeforeFade="0">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring25"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring26"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring27"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <!--Passe 10-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passe10"
+                android:layout_below="@+id/passe9"
+                android:layout_toEndOf="@+id/passeZehn">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring28"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring29"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/leer"
+                    android:id="@+id/ring30"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/middleBottom"
+        android:layout_below="@+id/middle">
+
+        <TextView
+            android:text="@string/leer000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/summe"
+            tools:hint="leer"
+            android:textSize="50dp"
+            android:layout_alignParentEnd="true"
+            />
+
+        <TextView
+            android:text="@string/summeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/summeText"
+            tools:text="@string/summeText"
+            android:textSize="50dp"
+            android:textColor="@android:color/background_dark"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/speichern"
+        android:text="@string/speichern"
+        android:layout_below="@id/middleBottom"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

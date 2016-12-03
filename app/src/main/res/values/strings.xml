@@ -1,0 +1,78 @@
+<resources>
+    <!-- Name der Activity -->
+    // TextField = tv
+    // EditText = et
+    // Button = btn
+
+    <!-- Allgemeine Wörter/Texte/Sätze -->
+    <string name="fehler">Fehler</string>
+    <string name="anmerkung">Anmerkung</string>
+    <string name="wichtig">Wichtig</string>
+    <string name="info">Info</string>
+    <string name="information">Information</string>
+
+
+    <!-- DASHBOARD -->
+    <string name="app_name">Sammlung</string>
+    <string name="btn_alertDialog">AlertDialog</string>
+    <string name="btn_animationVerblassung">AnimationVerblassung</string>
+    <string name="btn_checkNetzwerk">CheckNetzwerk</string> // Wird zwei mal genutzt
+    <string name="btn_imageEinbindenUndAendern">ImageEinbindenUndÄndern</string>
+    <string name="btn_progressbar">Progressbar</string>
+    <string name="btn_zeigeStandort">Zeige mir den Standort</string>
+    <string name="btn_ticTacToe">TicTacToe</string>
+    <string name="btn_toastNachWunscheingabe">ToastNachWunscheingabe</string>
+
+
+    <!-- CheckNetzwerk -->
+    <string name="tv_netzwerkverbindung">Netzwerkverbindung</string>
+
+
+    <!-- Progressbar -->
+    <string name="tv_ziel">Bitte fülle die leere Leiste in dem du auf den Knopf "Klick mich oft" klickst.</string>
+    <string name="tv_achtung">!Achte bitte auf die korrekte Ausführung!</string>
+    <string name="btn_infoText">Klick mich oft</string>
+
+
+    <!-- ToastNachWunscheingabe -->
+    <string name="et_individuelle_Eingabe">Deine individuelle Eingabe</string>
+    <string name="btn_toastAusgeben">Dein Toast ausgeben</string>
+
+    <!-- TicTacToe -->
+    <string name="tv_gewonnenerSpieler">Spieler</string>
+    <string name="btn_neuesSpiel">Neues Spiel</string>
+
+
+
+
+                                    <!-- Layouts-->
+    <!-- AllesInsGold -->
+    <string name="leer">0</string>
+    <string name="leer00">00</string>
+    <string name="leer000">000</string>
+    <string name="passeZwei">06</string>
+    <string name="passeVier">12</string>
+    <string name="passeSechs">18</string>
+    <string name="passeAcht">24</string>
+    <string name="passeZehn">30</string>
+    <string name="treffer">Treffer:</string>
+    <string name="zehnerTreffer">10er-Treffer:</string>
+    <string name="neunerTreffer">_9er-Treffer:</string>
+    <string name="summeText">SUMME:</string>
+    <string name="menu_summeBerechnen">Summe berechnen</string>
+    <string name="speichern">Speichern</string>
+    <string name="nulll">m</string>
+    <string name="eins">1</string>
+    <string name="zwei">2</string>
+    <string name="drei">3</string>
+    <string name="vier">4</string>
+    <string name="fuenf">5</string>
+    <string name="sechs">6</string>
+    <string name="sieben">7</string>
+    <string name="acht">8</string>
+    <string name="neun">9</string>
+    <string name="zehn">10</string>
+    <string name="x">X</string>
+    <string name="summe">Summe</string>
+
+</resources>
