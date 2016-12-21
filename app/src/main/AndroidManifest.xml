@@ -3,9 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="schilkroete.sammlung">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
 
 
     <application
@@ -56,6 +53,32 @@
         <activity
             android:name=".CheckNetzwerkverbindung"
             android:label="@string/btn_checkNetzwerk">
+        </activity>
+
+        <activity
+            android:name=".DatePicker"
+            android:label="@string/btn_datePicker">
+        </activity>
+
+        <activity
+            android:name=".SwipeSide"
+            android:label="@string/btn_swipeSide">
+        </activity>
+        <activity
+            android:label="Links"
+            android:name=".SwipeSideLeft">
+        </activity>
+        <activity
+            android:label="Rechts"
+            android:name=".SwipeSiteRight">
+        </activity>
+        <activity
+            android:label="ListView"
+            android:name=".ListView">
+        </activity>
+        <activity
+            android:label="Timer"
+            android:name=".Timer">
         </activity>
 
 

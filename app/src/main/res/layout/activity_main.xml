@@ -12,69 +12,111 @@
     tools:context="schilkroete.sammlung.MainActivity">
 
 
-    <Button
-        android:id="@+id/btn_alertdialog"
-        android:text="@string/btn_alertDialog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
 
-    <Button
-        android:id="@+id/btn_verblasse"
-        android:text="@string/btn_animationVerblassung"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_alertdialog"
-        android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/btn_alertdialog"
+            android:text="@string/btn_alertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"/>
 
-    <Button
-        android:id="@+id/btn_checkNetzwerk"
-        android:text="@string/btn_checkNetzwerk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_verblasse"
-        android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/btn_verblasse"
+            android:text="@string/btn_animationVerblassung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"/>
 
-    <Button
-        android:id="@+id/btn_imageEinbindenUndAendern"
-        android:text="@string/btn_imageEinbindenUndAendern"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_checkNetzwerk"
-        android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/btn_checkNetzwerk"
+            android:text="@string/btn_checkNetzwerk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"/>
 
-    <Button
-        android:id="@+id/btn_progressbar"
-        android:text="@string/btn_progressbar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_imageEinbindenUndAendern"
-        android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/btn_datePicker"
+            android:text="@string/btn_datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"/>
 
-    <Button
-        android:id="@+id/btn_standortGeben"
-        android:text="@string/btn_zeigeStandort"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_progressbar"
-        android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/btn_imageEinbindenUndAendern"
+            android:text="@string/btn_imageEinbindenUndAendern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"/>
 
-    <Button
-        android:id="@+id/btn_tictactoe"
-        android:text="@string/btn_ticTacToe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_standortGeben"
-        android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/btn_progressbar"
+            android:text="@string/btn_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="2"/>
 
-    <Button
-        android:id="@+id/btn_toastNachWunsch"
-        android:text="@string/btn_toastNachWunscheingabe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_tictactoe"
-        android:layout_alignStart="@+id/btn_imageEinbindenUndAendern"/>
+        <Button
+            android:id="@+id/btn_standortGeben"
+            android:text="@string/btn_zeigeStandort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="3"/>
+
+        <Button
+            android:id="@+id/btn_swipeSide"
+            android:text="@string/btn_swipeSide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="3"/>
+
+        <Button
+            android:id="@+id/btn_tictactoe"
+            android:text="@string/btn_ticTacToe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="4"/>
+
+        <Button
+            android:id="@+id/btn_timer"
+            android:text="@string/btn_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="4"/>
+
+        <Button
+            android:id="@+id/btn_toastNachWunsch"
+            android:text="@string/btn_toastNachWunscheingabe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="5"/>
+
+        <Button
+            android:id="@+id/btn_listView"
+            android:text="@string/btn_listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="5"/>
+    </GridLayout>
 
 
 </RelativeLayout>
+
+    <!-- row = Zeilen -->
+    <!-- column = Spalten-->

@@ -17,11 +17,15 @@
     <string name="btn_alertDialog">AlertDialog</string>
     <string name="btn_animationVerblassung">AnimationVerblassung</string>
     <string name="btn_checkNetzwerk">CheckNetzwerk</string> // Wird zwei mal genutzt
-    <string name="btn_imageEinbindenUndAendern">ImageEinbindenUndÄndern</string>
+    <string name="btn_datePicker">Date Time Picker</string>
+    <string name="btn_imageEinbindenUndAendern">ImageEinbindenÄndern</string>
+    <string name="btn_listView">ListView</string>
     <string name="btn_progressbar">Progressbar</string>
     <string name="btn_zeigeStandort">Zeige mir den Standort</string>
+    <string name="btn_swipeSide">Swipe Side</string>
     <string name="btn_ticTacToe">TicTacToe</string>
-    <string name="btn_toastNachWunscheingabe">ToastNachWunscheingabe</string>
+    <string name="btn_toastNachWunscheingabe">ToastWunscheingabe</string>
+    <string name="btn_timer">Timer</string>
 
 
     <!-- CheckNetzwerk -->
@@ -42,10 +46,15 @@
     <string name="tv_gewonnenerSpieler">Spieler</string>
     <string name="btn_neuesSpiel">Neues Spiel</string>
 
+    <!-- Timer -->
+    <string name="btn_run">Timer starten</string>
+    <string name="tv_time">00:30</string>
 
 
 
-                                    <!-- Layouts-->
+
+
+    <!-- Layouts-->
     <!-- AllesInsGold -->
     <string name="leer">0</string>
     <string name="leer00">00</string>
