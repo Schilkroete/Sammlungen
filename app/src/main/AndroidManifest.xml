@@ -114,7 +114,10 @@
             android:label="@string/btn_brainTrainer">
         </activity>
 
-
+        <activity
+            android:name=".Reaktion"
+            android:label="@string/btn_reaktion">
+        </activity>
 
     </application>
 

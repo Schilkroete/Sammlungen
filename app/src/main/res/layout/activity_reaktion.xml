@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_reaktion">
+
+    <Button
+        android:text="@string/_start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_start"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_time"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:text="@string/_warte"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_now"
+        android:visibility="invisible"
+        android:textSize="40dp"
+        android:gravity="center_horizontal"/>
+</LinearLayout>

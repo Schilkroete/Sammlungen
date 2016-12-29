@@ -132,7 +132,7 @@ public class BrainTrainer  extends AppCompatActivity {
         tv_time.setText("30s");
         tv_score.setText("0 / 0");
         tv_result.setText("");
-        btn_playAgain.setVisibility(view.INVISIBLE);
+        btn_playAgain.setVisibility(View.INVISIBLE);
 
         generateQuestion();
 
@@ -148,7 +148,7 @@ public class BrainTrainer  extends AppCompatActivity {
                         + " / " + Integer.toString(numberOfQuestions));
             }
         }.start();
-        btn_playAgain.setVisibility(view.VISIBLE);
+        btn_playAgain.setVisibility(View.VISIBLE);
     }
 
 
