@@ -131,6 +131,42 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button btn_bewertung = (Button)findViewById(R.id.btn_bewertung);
+        btn_bewertung.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v) {
+                Intent btn_bewertung= new Intent(MainActivity.this,
+                        Bewertung.class);
+                startActivity(btn_bewertung);
+            }
+        });
+
+        Button btn_visibility = (Button)findViewById(R.id.btn_visibility);
+        btn_visibility.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v) {
+                Intent btn_visibility= new Intent(MainActivity.this,
+                        Visibility.class);
+                startActivity(btn_visibility);
+            }
+        });
+
+        Button btn_brainTrainer = (Button)findViewById(R.id.btn_brainTrainer);
+        btn_brainTrainer.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v) {
+                Intent btn_brainTrainer= new Intent(MainActivity.this,
+                        BrainTrainer.class);
+                startActivity(btn_brainTrainer);
+            }
+        });
+
+
+
+
+
+
+
 
 
 /**     Button btn_zeigeStandort= (Button)findViewById(R.id.btn_zeigeStandort);

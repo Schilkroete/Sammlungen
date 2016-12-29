@@ -1,21 +1,28 @@
 <resources>
+
+
     <!-- Name der Activity -->
     // TextField = tv
     // EditText = et
     // Button = btn
 
+
     <!-- Allgemeine Wörter/Texte/Sätze -->
-    <string name="fehler">Fehler</string>
-    <string name="anmerkung">Anmerkung</string>
-    <string name="wichtig">Wichtig</string>
-    <string name="info">Info</string>
-    <string name="information">Information</string>
+    <string name="_fehler">Fehler</string>
+    <string name="_anmerkung">Anmerkung</string>
+    <string name="_wichtig">Wichtig</string>
+    <string name="_info">Info</string>
+    <string name="_information">Information</string>
+    <string name="_null">00:00</string>
+    <string name="_stop">Stop</string>
+    <string name="_start">Start</string>
 
 
     <!-- DASHBOARD -->
     <string name="app_name">Sammlung</string>
     <string name="btn_alertDialog">AlertDialog</string>
     <string name="btn_animationVerblassung">AnimationVerblassung</string>
+    <string name="btn_bewertung">Bewertung</string>
     <string name="btn_checkNetzwerk">CheckNetzwerk</string> // Wird zwei mal genutzt
     <string name="btn_datePicker">Date Time Picker</string>
     <string name="btn_imageEinbindenUndAendern">ImageEinbindenÄndern</string>
@@ -26,6 +33,8 @@
     <string name="btn_ticTacToe">TicTacToe</string>
     <string name="btn_toastNachWunscheingabe">ToastWunscheingabe</string>
     <string name="btn_timer">Timer</string>
+    <string name="btn_visibility">Visibility</string>
+    <string name="btn_brainTrainer">Brain Trainer</string>
 
 
     <!-- CheckNetzwerk -->
@@ -42,16 +51,15 @@
     <string name="et_individuelle_Eingabe">Deine individuelle Eingabe</string>
     <string name="btn_toastAusgeben">Dein Toast ausgeben</string>
 
+
     <!-- TicTacToe -->
     <string name="tv_gewonnenerSpieler">Spieler</string>
     <string name="btn_neuesSpiel">Neues Spiel</string>
 
+
     <!-- Timer -->
-    <string name="btn_run">Timer starten</string>
-    <string name="tv_time">00:30</string>
-
-
-
+    <string name="btn_go">Timer starten</string>
+    <string name="tv_time">10:00</string>
 
 
     <!-- Layouts-->
@@ -83,5 +91,6 @@
     <string name="zehn">10</string>
     <string name="x">X</string>
     <string name="summe">Summe</string>
+
 
 </resources>

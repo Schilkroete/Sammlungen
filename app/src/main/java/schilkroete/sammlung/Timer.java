@@ -19,11 +19,11 @@ import static android.R.id.progress;
 public class Timer extends AppCompatActivity {
 
 
-
     SeekBar seekBar_time;
     TextView tv_time;
-
-
+    boolean counterIsActive = false;
+    Button controllerButton;
+    CountDownTimer countDownTimer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +31,11 @@ public class Timer extends AppCompatActivity {
         setContentView(R.layout.activity_timer);
 
         tv_time = (TextView) findViewById(R.id.tv_time);
+        controllerButton = (Button) findViewById(R.id.btn_go);
 
         seekBar_time = (SeekBar) findViewById(R.id.seekBar_time);
         seekBar_time.setMax(1200);
-        seekBar_time.setProgress(120);
+        seekBar_time.setProgress(600);
 
         seekBar_time.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -61,6 +62,7 @@ public class Timer extends AppCompatActivity {
         String secondsString = Integer.toString(seconds);
         String minutesString = Integer.toString(minutes);
 
+        // z. B. bei einer Minute und sechs Sekunden steht nun 01:06 und nicht mehr 1:6
         if(seconds < 10) {
             secondsString = String.format("%02d", seconds);
         }
@@ -68,29 +70,47 @@ public class Timer extends AppCompatActivity {
             minutesString = String.format("%02d", minutes);
         }
         tv_time.setText(minutesString + ":" + secondsString);
-        Button btn_go = (Button) findViewById(R.id.btn_go);
-        btn_go.setText(minutesString + ":" + secondsString);
     }
 
 
 
     public void controlTimer (View view) {
-        // getProgress = gibt mir den aktuellen Wert
-        // 1000 wir benöötigen die Millisekunden,
-        // 1000 der Timer soll jede Sekunde ablaufen
-        new CountDownTimer(seekBar_time.getProgress() * 1000, 1000) {
 
-            @Override
-            public void onTick(long millisUntilFinished) {
+        if (counterIsActive == false) {
 
-                updateTimer((int)millisUntilFinished/1000);
-            }
+            counterIsActive = true;
+            seekBar_time.setEnabled(false);
+            controllerButton.setText(R.string._stop);
+            // getProgress = gibt mir den aktuellen Wert
+            // 1000 wir benötigen die Millisekunden,
+            // 1000 der Timer soll jede Sekunde ablaufen
+            countDownTimer = new CountDownTimer(seekBar_time.getProgress() * 1000 + 100, 1000) {
 
-            @Override
-            public void onFinish() {
+                @Override
+                public void onTick(long millisUntilFinished) {
+                    updateTimer((int)millisUntilFinished/1000);
+                }
 
-            }
-        };
+                @Override
+                public void onFinish() {
+                    resetTimer();
+                    Log.i("Done", "Timer ist fertig!");
+                }
+            }.start();
+        } else {
+            resetTimer();
+        }
+    }
+
+
+
+    public void resetTimer()  {
+        tv_time.setText(R.string._null);
+        seekBar_time.setProgress(600);
+        controllerButton.setText(R.string.btn_go);
+        countDownTimer.cancel();
+        seekBar_time.setEnabled(true);
+        counterIsActive = false;
     }
 
 

@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import static schilkroete.sammlung.R.string.fehler;
+import static schilkroete.sammlung.R.string._fehler;
 
 /**
  * Created by Schilkroete on 27.11.2016.
@@ -29,7 +29,7 @@ public class AlertDialog extends AppCompatActivity {
 
                 android.support.v7.app.AlertDialog.Builder build= new android.support.v7.app.AlertDialog.Builder(AlertDialog.this);
                 build.setIcon(android.R.drawable.ic_dialog_alert);
-                build.setTitle(fehler);
+                build.setTitle(_fehler);
                 build.setMessage("Benutzername oder Password ist falsch");
 
                 build.setCancelable(false);

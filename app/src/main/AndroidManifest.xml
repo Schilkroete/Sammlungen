@@ -20,44 +20,62 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".ToastNachWunscheingabe"
-            android:label="@string/btn_toastNachWunscheingabe">
-        </activity>
 
-        <activity
-            android:name=".ImageEinbindenUndAendern"
-            android:label="@string/btn_imageEinbindenUndAendern">
-        </activity>
 
         <activity
             android:name=".AnimationVerblassung"
             android:label="@string/btn_animationVerblassung">
         </activity>
 
-        <activity
-            android:name=".TicTacToe"
-            android:label="@string/btn_ticTacToe">
-        </activity>
 
         <activity
             android:name=".AlertDialog"
             android:label="@string/btn_alertDialog">
         </activity>
 
+
         <activity
-            android:name=".Progressbar"
-            android:label="@string/btn_progressbar">
+            android:name=".Bewertung"
+            android:label="@string/btn_bewertung">
         </activity>
+        <activity
+            android:name=".Bewertungsabfrage">
+        </activity>
+
 
         <activity
             android:name=".CheckNetzwerkverbindung"
             android:label="@string/btn_checkNetzwerk">
         </activity>
 
+
         <activity
             android:name=".DatePicker"
             android:label="@string/btn_datePicker">
+        </activity>
+
+
+        <activity
+            android:name=".ImageEinbindenUndAendern"
+            android:label="@string/btn_imageEinbindenUndAendern">
+        </activity>
+
+
+        <activity
+            android:label="ListView"
+            android:name=".ListView">
+        </activity>
+
+
+        <activity
+            android:name=".Progressbar"
+            android:label="@string/btn_progressbar">
+        </activity>
+
+
+        <activity
+            android:name=".Visibility"
+            android:label="@string/btn_visibility">
         </activity>
 
         <activity
@@ -72,14 +90,30 @@
             android:label="Rechts"
             android:name=".SwipeSiteRight">
         </activity>
-        <activity
-            android:label="ListView"
-            android:name=".ListView">
-        </activity>
+
+
         <activity
             android:label="Timer"
             android:name=".Timer">
         </activity>
+
+
+        <activity
+            android:name=".TicTacToe"
+            android:label="@string/btn_ticTacToe">
+        </activity>
+
+
+        <activity
+            android:name=".ToastNachWunscheingabe"
+            android:label="@string/btn_toastNachWunscheingabe">
+        </activity>
+
+        <activity
+            android:name=".BrainTrainer"
+            android:label="@string/btn_brainTrainer">
+        </activity>
+
 
 
     </application>

@@ -39,8 +39,8 @@ public abstract class StandortZeigen extends ActionBarActivity implements Locati
         double longitude = location.getLongitude();
 
         Toast.makeText(getApplicationContext(), "Latitude = " + latitude + " \nLongitude = " + longitude, Toast.LENGTH_LONG).show();
-        String a = "geo: " + latitude + ", " + longitude;
-        Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(a));
+        String activity_bewertung = "geo: " + latitude + ", " + longitude;
+        Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(activity_bewertung));
         startActivity(i);
     }
 
