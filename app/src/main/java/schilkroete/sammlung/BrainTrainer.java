@@ -69,7 +69,7 @@ public class BrainTrainer  extends AppCompatActivity {
         if (view.getTag().toString().equals(Integer.toString(locationOfCorrectAnswer))){
             score++;
             tv_result.setTextColor(0xffff0000);
-            tv_result.setText("Richtig!");
+            tv_result.setText("Richtiger!");
         } else {
             tv_result.setTextColor(0xffbdbdbd);
             tv_result.setText("Falsch!");
